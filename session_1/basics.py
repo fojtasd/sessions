@@ -13,6 +13,7 @@ from basics3_calc import calc
 # f = funkce (v idečku), c je konstanta
 # from BALÝČEK import SYMBOL
 # pythonu nepřeteče integer
+# velké pismeno je dle konvencí konstanta
 
 def main():
     a = input("Zadej cislo: ")
