@@ -23,7 +23,6 @@ print(kvadra(1, 2, -63))
 print("7, -9")
 print("----------")
 
-
 print(kvadra(2, 9, 0))
 print("0, -4.5")
 print("----------")
