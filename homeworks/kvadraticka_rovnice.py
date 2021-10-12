@@ -4,7 +4,6 @@ from math import sqrt
 def kvadra(a, b, c, vysledek1, vysledek2):
     vysledky = (vysledek1, vysledek2)
     d = b * b - 4 * a * c
-    print((-b + sqrt(d)))
     if d == 0:
         x1 = float(-b / (2 * a))
         reseni = (x1, "none")
