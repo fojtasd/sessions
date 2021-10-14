@@ -12,9 +12,16 @@ class Hodnota:
         "milimetr": 0.001,
         "centimetr": 0.01,
         "decimetr": 0.1,
+        "palec": 0.0254,
+        "stopa": 0.3048,
+        "loket": 0.593,
+        "yard": 0.9144,
         "metr": 1,
-        "kilometr": 1000
+        "sáh": 1.7928,
+        "kilometr": 1000,
+        "míle": 1609
     }
+
 
 def prevod(hodnota: float, stavajici_jednotka: str, pozadovana_jednotka: str):
     koeficient = 0
@@ -22,7 +29,8 @@ def prevod(hodnota: float, stavajici_jednotka: str, pozadovana_jednotka: str):
     vysledny_prevod = 0
     koeficient = Hodnota.seznam[stavajici_jednotka]
     koeficient2 = Hodnota.seznam[pozadovana_jednotka]
-    vysledny_prevod = float(hodnota)*float(koeficient)/float(koeficient2)
+    vysledny_prevod = float(hodnota) * float(koeficient) / float(koeficient2)
     return vysledny_prevod
+
 
 print(prevod(50, "kilometr", "centimetr"))
