@@ -23,7 +23,7 @@ class Hodnota:
     }
 
 
-def prevod(hodnota: float, stavajici_jednotka: str, pozadovana_jednotka: str):
+def prevod(hodnota: float, stavajici_jednotka: str, pozadovana_jednotka: str) -> float:
     koeficient = 0
     koeficient2 = 0
     vysledny_prevod = 0
