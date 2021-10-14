@@ -16,7 +16,7 @@ class Hodnota:
         "stopa": 0.3048,
         "loket": 0.593,
         "yard": 0.9144,
-        "metr": 1,
+        "metr": float(1),
         "sáh": 1.7928,
         "kilometr": 1000,
         "míle": 1609
@@ -33,4 +33,4 @@ def prevod(hodnota: float, stavajici_jednotka: str, pozadovana_jednotka: str) ->
     return vysledny_prevod
 
 
-print(prevod(50, "kilometr", "centimetr"))
+print(prevod(50, "metr", "kilometr"))
