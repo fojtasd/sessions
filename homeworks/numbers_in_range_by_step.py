@@ -1,3 +1,6 @@
+import sys
+
+
 def numbers_in_range_by_step(a: float, b: float, step: float):
     while a < b:
         a = a + step
