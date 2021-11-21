@@ -26,5 +26,15 @@ def main(input_range: Range, output_range: Range, input_value: float):
     return result
 
 
+"""
+input_range = Range(100, 200)
+output_range = Range(-100, 0)
+
+c = RangeConverter(input_range, output_range)
+
+result = c.convert(150)
+
+"""
+
 if __name__ == "__main__":
     main(Range(100, 200), Range(-100, 0), 150)
