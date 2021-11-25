@@ -113,8 +113,8 @@ def main():
     for y in np.arange(-2.0, 4.0, 0.005):
         for x in np.arange(-2.0, 4.0, 0.005):
             r = math.sqrt((x - center[0]) ** 2 + (y - center[1]) ** 2)
-            fi = math.atan(y / x)
-            t = fi / (math.pi / 2)
+            fi = math.atan2((y - center[1]), (x - center[0]))
+            t = (fi + math.pi) / (2 * math.pi)
             b_coord = space_converter.convert((x, y))
 
             if radius > r:
