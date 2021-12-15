@@ -31,7 +31,8 @@ def color_ramp(colors: List[Rgb], t: float) -> Rgb:
         return colors[-1]
 
     frac, integer = math.modf(t * (color_count - 1))
-    local_t = frac
+    # math.modf(hodnota) -> vrací desetinnou část (1. číslo tuplu) a celočíselnou část(2.část tuplu)
+    local_t = frac  # určuje procentuální část v dané výseči lokálního t
     color_index = int(integer)
     c1 = colors[color_index]
     c2 = colors[color_index + 1]
